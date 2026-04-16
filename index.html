@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayalvizhi Shanmugam | Enterprise Java Solution Architect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #3b82f6;
+      --accent: #10b981;
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --border: #e2e8f0;
+    }
+
+    body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg); color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
+    
+    header { 
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); 
+      color: white; 
+      padding: 60px 20px; 
+      text-align: center; 
+    }
+	.about-content p { font-size: 1.1rem; line-height: 1.8; margin-top: 0; }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 20px;
+      object-fit: cover;
+      background-color: #fff; /* Placeholder background */
+    }
+
+    .hero h1 { font-size: 2.8rem; margin: 0 0 10px; letter-spacing: -1px; }
+    .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 800px; margin: 0 auto; font-weight: 300; }
+
+    .nav-bar { position: sticky; top: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 100; border-bottom: 1px solid var(--border); padding: 15px 0; text-align: center; }
+    .nav-bar a { margin: 0 15px; text-decoration: none; color: var(--text); font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+    .nav-bar a:hover { color: var(--secondary); }
+
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .card { background: white; border-radius: 16px; padding: 40px; margin-bottom: 30px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border: 1px solid var(--border); }
+    
+    h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; display: flex; align-items: center; }
+    h2::after { content: ''; flex: 1; margin-left: 20px; height: 1px; background: var(--border); }
+
+    .summary-text { font-size: 1.1rem; color: #334155; line-height: 1.8; }
+
+    /* Evolution Timeline Styles */
+    .timeline-phase { border-left: 4px solid #cbd5e1; padding-left: 25px; margin-bottom: 50px; position: relative; }
+	.timeline-dot {
+    width: 12px; height: 12px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+	}
+    .phase-current { border-left-color: var(--accent); }
+    .phase-mid { border-left-color: var(--secondary); }
+    .phase-early { border-left-color: #94a3b8; }
+    
+    .phase-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; display: block; }
+    .phase-focus { font-style: italic; color: #64748b; margin-bottom: 20px; display: block; }
+
+    .project-item { margin-bottom: 30px; }
+    .project-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+    .company { font-weight: 700; color: var(--primary); font-size: 1.15rem; }
+    .date { background: #f1f5f9; padding: 3px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: #475569; }
+    
+    .metric-badge { background: #ecfdf5; color: #065f46; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.85rem; }
+    
+    .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .cert-card { background: #fff; padding: 20px; border-radius: 12px; border: 1px solid var(--border); border-top: 4px solid var(--secondary); }
+
+    footer { background: #0f172a; color: white; padding: 60px 20px; text-align: center; }
+    .btn { display: inline-block; background: var(--secondary); color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; margin: 10px; }
+    .btn:hover { background: #2563eb; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+
+<header>
+<h1>Kayalvizhi Shanmugam</h1>
+<p class="tagline">Enterprise Java Solution Architect | AWS & Azure | Microservices | API Strategy | Agentic AI</p>
+<p>Designing scalable, secure, high-throughput systems for enterprise workloads</p>
+</header>
+<nav class="nav-bar" role="navigation">
+	<a href="#about">About Me</a>
+    <a href="#experience">Experience</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#competencies">Competencies</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact">Contact</a>
+</nav>
+<section>
+ 
+<section class="card" id="about">
+  <h2>About Me</h2>
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: start;">
+    
+    <div class="about-content">
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 0;">
+        I am an Enterprise Java Solution Architect with deep expertise in designing cloud-native, AI-augmented platforms for Fortune 500 clients across Healthcare, BFSI, and SaaS. My work spans multi-cloud architecture on AWS and Azure, high-throughput microservices ecosystems, Zero Trust security frameworks, and — most recently — Agentic AI platforms that bring autonomous reasoning and self-healing capabilities to enterprise operations.
+	  </p> <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 0;">
+		I have delivered production-grade systems for clients including MedImpact Healthcare, Fidelity Investments, and Microsoft, consistently achieving 99.99% platform uptime under strict SOC2 and GDPR compliance. </p> <h3 style="color: var(--secondary); font-size: 1.2rem; margin-top: 25px;">Architectural Impact</h3>
+      <ul style="padding-left: 20px;">
+        <li>Multi-Cloud Reliability: Architected AWS + Azure platforms with 99.99% uptime and automated disaster recovery under SOC2/GDPR compliance.</li>
+<li>Zero Trust Security: Engineered custom Java-based WAF with mTLS and OAuth2 — reducing attack surface by 80% on financial platforms.</li>
+<li>Platform Modernisation: Led IBM BPM → Kafka-driven microservices transformation — 21% throughput gain, 18% cost reduction.</li>
+<li>Agentic AI: Building self-healing enterprise platforms using LLM, RAG/GraphRAG, and Istio service mesh telemetry for autonomous remediation.</li>
+	  </ul>
+      <h3 style="color: var(--secondary); font-size: 1.2rem; margin-top: 25px;">Leadership & Mentorship</h3>
+      <ul style="padding-left: 20px;">
+        <li><strong>Global Team Lead:</strong> Directed cross-functional global teams, enhancing overall productivity by <span class="metric-badge">60%</span> through strategic technical governance.</li>
+        </ul>
+    </div>
+
+    <div class="about-image" style="text-align: center;">
+      <img src="ProfileImage.jpeg" alt="Kayalvizhi Shanmugam" style="width: 100%; max-width: 300px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border: 1px solid var(--border);">
+      <p style="margin-top: 15px; font-weight: 600; color: var(--primary);">Kayalvizhi Shanmugam</p>
+      <p style="font-size: 0.85rem; color: #64748b;">Enterprise Java Solution Architect</p>
+    </div>
+
+  </div> 
+
+</section>
+<div class="card">
+
+  <h2> Enterprise Architecture Engagement </h2>
+
+  <h3>API & Integration Architect (Independant Consulting)</h3>
+  <p><strong>#1: Enterprise API & Event-Driven Integration Platform | AWS | Kafka | Security | CI/CD</strong></p>
+
+  <h3> Problem Statement</h3>
+  <p>
+    Legacy integration systems were tightly coupled, leading to high latency, limited scalability, and inefficient partner onboarding. 
+    The need was to design a scalable, secure, and event-driven API platform for enterprise workloads.
+  </p>
+
+  <h3> Architecture Overview</h3>
+  <ul>
+    <li>Designed API-first architecture using AWS API Gateway and microservices (Spring Boot)</li>
+    <li>Built event-driven integration using Kafka and AWS SQS</li>
+    <li>Containerized services using Docker and deployed on ECS/EKS</li>
+    <li>Implemented secure authentication using OAuth2, JWT, and AWS Cognito</li>
+    <li>Enabled CI/CD pipelines using Jenkins, AWS CodePipeline, and Terraform</li>
+  </ul>
+
+  <h3> Key Architectural Decisions</h3>
+  <ul>
+    <li><strong>Kafka + SQS</strong> → decoupled services and improved scalability</li>
+    <li><strong>API Gateway</strong> → centralized routing, throttling, and security</li>
+    <li><strong>Containerization (Docker + EKS)</strong> → ensured portability and high availability</li>
+    <li><strong>OAuth2 + JWT</strong> → standardized enterprise-grade security</li>
+    <li><strong>Infrastructure as Code (Terraform)</strong> → repeatable deployments across environments</li>
+  </ul>
+
+  <h3> Impact</h3>
+  <ul>
+    <li>Achieved <strong>99.99% system availability</strong></li>
+    <li>Reduced API latency by <strong>40%</strong></li>
+    <li>45% improvement in release cycle time.</li>
+	<li>99.99% platform availability achieved. </li>
+	  <li>MTTR reduced by 40% through centralised observability stack.</li>
+    <li>Accelerated deployment cycles by <strong>60%</strong> using CI/CD automation</li>
+  </ul>
+
+  <h3>Tech Stack</h3>
+  <p>
+    Java | Spring Boot | Kafka | AWS (API Gateway, Lambda, ECS/EKS, SQS, Cognito) | Docker | Terraform | Jenkins
+  </p>
+
+   <h3>🔗 GitHub</h3> 
+  <p> 
+    <a href="https://github.com/kayalshan/Enterprise-API-Integration-Platform/blob/main/README.md" target="_blank">View Project Repository</a> 
+  </p> 
+
+</div>
+<div class="card">
+
+  <p><strong>#2: Unified API Security & Threat Protection Platform</strong></p>
+
+  <p><strong>Platform Overview:</strong> Architected a cloud-native, real-time API security and threat protection platform leveraging microservices, service mesh, and event-driven architecture to secure high-throughput enterprise systems.</p>
+
+  <div class="divider"></div>
+
+  <h3>Architecture View 1: API Security Layer</h3>
+  <ul>
+    <li>Implemented OAuth2 and JWT-based authentication and authorization</li>
+    <li>Integrated WAF (OWASP CRS) for protection against OWASP Top 10 threats</li>
+    <li>Centralized security enforcement using API Gateway and Istio Ingress</li>
+    <li>Enabled Zero Trust security with mTLS via service mesh</li>
+  </ul>
+  <p><strong>Impact:</strong> Established centralized, consistent, and enterprise-grade API security with real-time threat protection</p>
+
+  <div class="divider"></div>
+
+  <h3>Architecture View 2: Event-Driven Threat Detection</h3>
+  <ul>
+    <li>Designed Kafka-based asynchronous event streaming pipeline</li>
+    <li>Decoupled API processing from security analytics</li>
+    <li>Enabled real-time log ingestion and threat event processing</li>
+    <li>Integrated AI-based anomaly detection for intelligent threat identification</li>
+  </ul>
+  <p><strong>Impact:</strong> Achieved high scalability, improved system resilience, and near real-time threat detection without impacting API latency</p>
+
+  <div class="divider"></div>
+
+  <h3>Architecture View 3: Cloud-Native & DevOps</h3>
+  <ul>
+    <li>Containerized microservices using Docker</li>
+    <li>Deployed on Kubernetes (AKS/EKS) for scalability and resilience</li>
+    <li>Implemented CI/CD pipelines using GitHub Actions</li>
+    <li>Provisioned infrastructure using Terraform (multi-cloud ready)</li>
+  </ul>
+  <p><strong>Impact:</strong> Enabled scalable, automated, and production-ready cloud deployments with faster release cycles</p>
+
+  <div class="divider"></div>
+
+  <h3>Key Architectural Decisions</h3>
+  <ul>
+    <li>Kafka for asynchronous, high-throughput event processing over synchronous REST</li>
+    <li>Istio Service Mesh for Zero Trust security and traffic control</li>
+    <li>AI-based detection over rule-based systems for evolving threats</li>
+    <li>API Gateway for centralized routing, throttling, and policy enforcement</li>
+  </ul>
+
+  <h3>Tech Stack</h3>
+  <p>Java | Spring Boot | WebFlux | Kafka | Istio | Docker | Kubernetes | Terraform | Python | Prometheus | Grafana | ELK</p>
+
+  <h3>🔗 GitHub</h3>
+  <p>
+    <a href="https://github.com/kayalshan/API-Security-Threat-Protection-Platform" target="_blank">
+    View Project Repository
+    </a>
+  </p>
+
+</div>
+<div class="card">
+
+   <p><strong> #3: Cloud-Native Microservices Migration (AWS) </strong></p>
+
+  <h3> Problem Statement</h3>
+  <p>
+    Legacy monolithic applications were causing slow release cycles, limited scalability, and high operational overhead, impacting business agility and partner onboarding speed.
+  </p>
+
+  <h3> Architecture Overview</h3>
+  <ul>
+    <li>Transformed monolithic systems into cloud-native microservices architecture on AWS</li>
+    <li>Decomposed monolith into domain-driven microservices using Spring Boot</li>
+    <li>Designed RESTful APIs and integrated with external partners</li>
+    <li>Containerized services using Docker and deployed on EKS</li>
+    <li>Implemented centralized API management using Apigee</li>
+    <li>Enabled observability using CloudWatch, Datadog, and Splunk</li>
+  </ul>
+
+  <h3> Key Architectural Decisions</h3>
+  <ul>
+    <li><strong>Domain-driven decomposition</strong> → improved modularity and team ownership</li>
+    <li><strong>EKS over EC2</strong> → better orchestration and scalability</li>
+    <li><strong>API-first design</strong> → enabled seamless partner integrations</li>
+    <li><strong>Centralized observability stack</strong> → reduced MTTR and improved reliability</li>
+    <li><strong>CI/CD pipelines</strong> → automated build, test, and deployment workflows</li>
+  </ul>
+
+  <h3> Impact</h3>
+  <ul>
+    <li>Reduced release cycle time by <strong>45%</strong></li>
+    <li>Decreased onboarding time for partners by <strong>50%</strong></li>
+    <li>Improved system observability, reducing <strong>MTTR by 40%</strong></li>
+    <li>Enabled scalable, resilient cloud-native platform</li>
+  </ul>
+
+  <h3> Tech Stack</h3>
+  <p>
+    Java | Spring Boot | AWS (EKS, Lambda, EC2, CloudWatch) | Docker | Apigee | Kafka | Jenkins
+  </p>
+
+  <!-- <h3>🔗 GitHub</h3> -->
+  <!-- <p> -->
+    <!-- <a href="#" target="_blank">View Project Repository</a> -->
+  <!-- </p> -->
+
+</div>
+
+<section class="card" id="case-studies">
+  <h2> Architecture Case Studies</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+    
+    <div style="border: 1px solid var(--border); padding: 20px; border-radius: 12px; background: #f8fafc;">
+      <h3 style="color: var(--primary); margin-top: 0;">Zero-Trust API Security</h3>
+      <p style="font-size: 0.9rem; color: #64748b;"><strong>Challenge:</strong> Securing high-volume healthcare data across public/private cloud boundaries.</p>
+      <p style="font-size: 0.95rem;">
+        <strong>Solution:</strong> Engineered a multi-layered defense-in-depth strategy. Implemented <strong>OAuth2/OIDC</strong> for identity, <strong>mTLS</strong> for service-to-service communication, and a <strong>custom Java-based WAF</strong> for real-time threat mitigation at the gateway level.
+      </p>
+		<p>Impact: Reduced security attack surface by 80%. Neutralised OWASP Top 10 injection and XSS vulnerabilities. Platform maintained 100% SOC2 and GDPR compliance.</p>
+      <div style="margin-top: 10px;">
+        <span class="metric-badge">80% Attack Surface Reduction</span>
+      </div>
+    </div>
+
+    <div style="border: 1px solid var(--border); padding: 20px; border-radius: 12px; background: #f8fafc;">
+      <h3 style="color: var(--primary); margin-top: 0;">Event-Driven Ecosystems</h3>
+      <p style="font-size: 0.9rem; color: #64748b;"><strong>Challenge:</strong> Overcoming processing bottlenecks in legacy monolithic batch systems.</p>
+      <p style="font-size: 0.95rem;">
+        <strong>Solution:</strong> Redesigned core processing into an asynchronous, <strong>Kafka-based architecture</strong>. Utilized the <strong>Saga Pattern</strong> for distributed transactions and Kafka Streams for real-time ETL, ensuring data consistency without synchronous blocking.
+      </p>
+		<p>Impact: 21% throughput improvement. 18% reduction in operational cost. Eliminated batch processing bottlenecks with real-time Kafka Streams ETL.</p>
+      <div style="margin-top: 10px;">
+        <span class="metric-badge">21% Throughput Increase</span>
+      </div>
+    </div>
+
+    <div style="border: 1px solid var(--border); padding: 20px; border-radius: 12px; background: #f8fafc;">
+      <h3 style="color: var(--primary); margin-top: 0;">Self-Healing Cloud Platforms</h3>
+      <p style="font-size: 0.9rem; color: #64748b;"><strong>Challenge:</strong> Manual intervention for production failures leading to high MTTR.</p>
+      <p style="font-size: 0.95rem;">
+        <strong>Solution:</strong> Architected a <strong>Kubernetes (EKS/AKS)</strong> deployment with automated <strong>HPA</strong> and liveness/readiness probes. Integrated <strong>Istio Service Mesh</strong> for advanced traffic routing and canary deployments to ensure zero-downtime releases.
+      </p>
+      <div style="margin-top: 10px;">
+        <span class="metric-badge">99.99% Availability Achieved</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="card" id="competencies">
+  <h2>Technical Governance & Core Competencies</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+    
+    <div class="competency-box">
+      <h3 style="color: var(--primary); font-size: 1.15rem; border-left: 4px solid var(--accent); padding-left: 12px;">Strategic Architecture & AI</h3>
+      <ul style="list-style: none; padding: 0; font-size: 0.95rem;">
+        <li>• <strong>Distributed Systems:</strong> Domain-Driven Design (DDD), Microservices, and Service Mesh (Istio).</li>
+        <li>• <strong>Agentic AI Strategy:</strong> Orchestrating autonomous agents with <strong>LangChain4j</strong> and <strong>Spring AI</strong>.</li>
+        <li>• <strong>Data Grounding:</strong> Implementing <strong>RAG</strong> and Vector Search (Neo4j, FAISS) for enterprise automation.</li>
+        <li>• <strong>Governance:</strong> Leading Architecture Review Boards (ARB) and defining global tech standards.</li>
+		<li>• MCP Integration: Connecting AI agents to enterprise tools and data sources via Model Context Protocol (MCP) server patterns.</li>
+		 <li>• Python for AI: Building RAG pipelines, LLM orchestration workflows, and agent evaluation frameworks with Python.</li>
+      </ul>
+		
+    </div>
+
+    <div class="competency-box">
+      <h3 style="color: var(--primary); font-size: 1.15rem; border-left: 4px solid var(--secondary); padding-left: 12px;">High-Scale Engineering</h3>
+      <ul style="list-style: none; padding: 0; font-size: 0.95rem;">
+        <li>• <strong>Event-Driven Design:</strong> Kafka, RabbitMQ, and <strong>Saga Patterns</strong> for transactional integrity.</li>
+        <li>• <strong>Performance:</strong> P99 Latency optimization, Reactive Programming (WebFlux), and Redis caching.</li>
+        <li>• <strong>Security & Identity:</strong> OAuth2.0, OIDC, JWT, and <strong>Zero-Trust</strong> architecture enforcement.</li>
+        <li>• <strong>API Strategy:</strong> Designing resilient REST/gRPC gateways with mTLS and gateway security.</li>
+      </ul>
+    </div>
+
+    <div class="competency-box">
+      <h3 style="color: var(--primary); font-size: 1.15rem; border-left: 4px solid #94a3b8; padding-left: 12px;">Cloud & Platform Strategy</h3>
+      <ul style="list-style: none; padding: 0; font-size: 0.95rem;">
+        <li>• <strong>Multi-Cloud Operations:</strong> Architecting portable workloads across <strong>AWS (EKS)</strong> and <strong>Azure (AKS)</strong>.</li>
+        <li>• <strong>Infrastructure as Code:</strong> Automation via <strong>Terraform</strong> and Ansible for immutable infrastructure.</li>
+        <li>• <strong>Observability:</strong> Designing self-healing systems using Prometheus, Grafana, and OpenTelemetry.</li>
+        <li>• <strong>DevOps Maturity:</strong> Accelerating CI/CD pipelines, DevSecOps, and team velocity.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="card" id="experience">
+
+  <h2> Experience</h2>
+
+  <div class="timeline">
+	   <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>
+			API Integration Architect — Independent Consulting</h3>
+		  <span>Jan 2025 – Present</span>
+<p><ul><li>Architecting enterprise-grade Agentic AI platforms using Java 17, LLMs, RAG/GraphRAG (Neo4j), and Istio service mesh.</li>
+	<li> Designing reactive microservices with Spring WebFlux integrated with FAISS/OpenSearch vector databases for low-latency AI inference. </li>
+<li>Building self-healing cloud-native systems with automated closed-loop remediation and dynamic traffic control.</li></ul>
+</p>  </div>
+	   </div>
+<div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Senior Technical Lead — Capgemini via Cognizioni(End Client: Microsoft)</h3>
+		  <span>Oct 2024 – Dec 2024</span>
+	<p><ul><li>Led Azure cloud modernisation for Microsoft, defining AKS-based architecture for containerised workloads. </li>
+	<li>Resolved critical scalability bottlenecks, improving system availability to 99.9%. </li>
+	<li>Established observability architecture using Azure Monitor and Splunk, reducing incident resolution time significantly.</li></ul>
+	</p>  
+	</div>
+ </div>
+ <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Technical Lead III — Photon (Client: MedImpact Healthcare)</h3>
+        <span>Jan 2023 – Jun 2024</span>
+        <p><ul><li>Designed a High-Availability Multi-Cloud Platform (AWS EKS + Azure AKS) using Terraform IaC with automated disaster recovery — achieving 99.99% uptime and 100% SOC2/GDPR compliance.</li>
+		<li> Architected a Zero Trust Security Framework with a custom Java-based WAF, mTLS, and OWASP Top 10 mitigation — reducing security attack surface by 80%.</li
+		<li>Transformed healthcare prior authorisation and appeals workflows from IBM BPM/Camunda into Kafka-driven Spring Boot microservices — 21% throughput gain, 18% cost reduction.</li>
+		<li>Stack: Java 17 · Spring Boot/WebFlux · AWS/Azure · Kafka · Kubernetes · Istio · Terraform · Prometheus · Grafana · OAuth2 · mTLS</li>
+		</p>
+      </div>
+    </div>
+
+	 <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Principal Software Engineer — Photon (Client: Fidelity Investments)</h3>
+        <span>Sep 2020 – Dec 2023</span>
+        <p><ul><li>Led migration of monolithic systems to microservices architecture — improving release cycles by 45%. Designed scalable API platforms using Spring Boot and AWS API Gateway, optimising P99 latency for distributed systems. </li>
+		<li> Architected a Zero Trust Security Framework with a custom Java-based WAF, mTLS, and OWASP Top 10 mitigation — reducing security attack surface by 80%.</li> 
+		<li>Stack: Java · Spring Boot · AWS API Gateway · EKS · Prometheus · Grafana · Kafka</li></ul>
+		</p>
+      </div>
+    </div>
+
+	    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Senior Technical Lead – Alten Calsoft</h3>
+        <span>Jan 2019 – Oct 2019</span>
+        <p>Led modernization of legacy systems into scalable microservices architecture and improved performance.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Senior Technical Lead – Alten Calsoft</h3>
+        <span>Jan 2019 – Oct 2019</span>
+        <p>Led modernization of legacy systems into scalable microservices architecture and improved performance.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Senior Associate – Cognizant</h3>
+        <span>Nov 2015 – Jul 2018</span>
+        <p>Designed enterprise integrations and implemented Kafka-based event-driven systems.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Lead Software Engineer – Collabera</h3>
+        <span>Jan 2014 – Jul 2014</span>
+        <p>Led platform transformation initiatives and defined system architecture strategies.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Lead Engineer – HCL Technologies</h3>
+        <span>Nov 2010 – Oct 2012</span>
+        <p>Built enterprise applications and integration workflows for large-scale systems.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Senior Developer – Esquire Systems</h3>
+        <span>Nov 2007 – Sep 2010</span>
+        <p>Developed core banking systems and handled enterprise integrations.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Software Engineer – ACE Infotech</h3>
+        <span>Jun 2004 – Nov 2007</span>
+        <p>Built foundational Java applications and contributed to enterprise solutions.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+ <section id="certs">
+  <h2>Certifications</h2>
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <strong>AWS Certified Solutions Architect — Professional</strong><br>
+      <small>In Progress | Expected 2026</small>
+    </div>
+
+	 <div class="cert-card">
+      <strong>AWS Certified Solutions Architect — Associate</strong><br>
+       
+    </div>
+
+    <div class="cert-card">
+      <strong>Sun Certified Java Professional (SCJP)</strong><br>
+      <small>Oracle / Sun Microsystems</small>
+    </div>
+
+    <div class="cert-card">
+      <strong>Certified Agile Scrum Master (ASM)</strong><br>
+      <small>EXIN Certified</small>
+    </div>
+
+
+
+    <div class="cert-card">
+      <strong>
+        <a href="https://certificates.upgrad.com/e261fb53-74c7-4346-a8c5-52900fb8358e-Gen-AI-8IVjmxAnuC8C3SCB.jpeg" target="_blank">
+          Generative AI Foundations Certificate
+        </a>
+      </strong><br>
+      <small>Upgrad Professional</small>
+    </div>
+
+    <div class="cert-card">
+      <strong>
+        <a href="https://www.edureka.co/certificates/mycertificate/01e5115f4a22135b6a08f88597145e27" target="_blank">
+          Python Programming Expert
+        </a>
+      </strong><br>
+      <small>Edureka Certified</small>
+    </div>
+
+    <div class="cert-card">
+      <strong>
+        <a href="https://www.edureka.co/certificates/mycertificate/a6e25d60fcba08e7ac554cc7ff94d44b" target="_blank">
+          Linux Fundamentals
+        </a>
+      </strong><br>
+      <small>Edureka Certified</small>
+    </div>
+
+  </div>
+</section>
+
+  <footer id="contact">
+    <h2>Let's Connect</h2>
+    <p>Available globally for Senior Architectural roles and AI Strategy consulting.</p>
+    <div style="margin: 30px 0;">
+      <a href="mailto:kayalshanmugam.techsavvy@gmail.com" class="btn">Email Me</a>
+      <a href="https://linkedin.com/in/kayalvizhi-shanmugam" target="_blank" class="btn" style="background:#0077b5;">LinkedIn Profile</a>
+    </div>
+    <p style="font-size: 0.8rem; opacity: 0.6;">© 2026 Kayalvizhi Shanmugam | Chennai, India</p>
+  </footer>
+
+</body>
+</html>
